@@ -1,208 +1,179 @@
-:root {
-  --padding: 16px;
-  --white: #ffffff;
-  --blue-gray: #939caa;
-  --yellow: #fcb72b;
-  --dark-grayish-blue: #333a44;
-  --blue-gray-2: #495567;
-}
 body {
-  counter-reset: join-card-img;
+  counter-reset: why-join-us-counter;
 }
-main {
-  overflow-x: hidden;
-}
-h1 {
-  color: var(--white);
-  font-size: clamp(40px, 5.04vw, 56px);
-  letter-spacing: -2.5px;
-}
-h2 {
-  color: var(--blue-gray-2);
-  font-size: clamp(32px, 4.32vw, 48px);
-  line-height: clamp(32px, 4.32vw, 48px);
-  letter-spacing: -2.14px;
-}
+
+/* Hero */
 .hero {
   background: linear-gradient(#2f3b5991, #2f3b5991),
-    url(../imgs/location/hero-bg.png) center/cover no-repeat;
+    url(../images/careers/hero-background-image.png) center/cover no-repeat;
   position: relative;
 }
 .hero::after {
-  content: url(../imgs/location/circle-hero.png);
+  content: url(../images/careers/circle-hero.png);
   position: absolute;
-  right: 0px;
+  right: -31px;
   top: 50%;
   transform: translateY(-50%);
 }
-.hero-container {
+.hero .container {
   min-height: 200px;
 }
-.care {
-  margin: 120px auto;
-  padding: 20px var(--padding);
-  flex-wrap: wrap-reverse;
-  position: relative;
-  gap: 64px;
+.hero h1 {
+  color: var(--color-white);
+  font-size: clamp(40px, 5.04vw, 56px);
+  letter-spacing: calc(clamp(1.79px, 0.22vw, 2.5px) * -1);
 }
-.care::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -460px;
-  transform: translateY(-50%);
-  width: 445px;
-  height: 445px;
-  border-radius: 50%;
-  background-color: #e5ecf4;
+
+/* Join Mission */
+.join-mission {
+  gap: 56px;
+  margin-top: clamp(72px, 10.81vw, 120px);
 }
-.care::before {
-  content: url(../imgs/careers/care-arrow.png);
-  position: absolute;
-  right: -165px;
-  top: 307px;
-  z-index: 1;
-  transform-origin: right;
+.join-mission .content {
+  flex-basis: 445px;
 }
-.care-content {
-  width: 445px;
+.join-mission .content h2 {
+  color: var(--color-dark-navy);
+  font-size: clamp(32px, 4.32vw, 48px);
+  line-height: clamp(32px, 4.32vw, 48px);
+  letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
 }
-.care-content p {
-  color: var(--blue-gray);
+.join-mission .content p {
+  color: var(--color-dim-grey);
   font-size: 15px;
   line-height: 25px;
-  margin: 24px 0 40px;
+  margin-block: 24px 40px;
 }
-.care img {
+.join-mission img {
   width: clamp(311px, 40.09vw, 445px);
   height: clamp(311px, 40.09vw, 445px);
   border-radius: 50%;
 }
-.join {
-  margin: 120px auto;
-  text-align: center;
+
+/* Why Join Us */
+.why-join-us {
+  margin-block: 120px;
 }
-.join h2 {
-  margin-bottom: 103px;
+.why-join-us h2 {
+  color: var(--color-dark-navy);
+  font-size: clamp(32px, 4.32vw, 48px);
+  letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
+  margin-bottom: clamp(64px, 9.27vw, 103px);
 }
-.join-cards-container {
-  gap: 60px 30px;
+.why-join-us .wrapper {
+  gap: 56px 30px;
 }
-.join-card {
-  width: 350px;
+.why-join-us .wrapper article {
+  max-width: 350px;
 }
-.join-card-img {
+.why-join-us .wrapper .image {
+  margin-inline: auto;
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  margin: 0 auto 87px;
   position: relative;
 }
-.join-card-img img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-}
-.join-card-img::after {
-  counter-increment: join-card-img;
-  content: "0" counter(join-card-img) "";
+.why-join-us .wrapper .image::after {
+  counter-increment: why-join-us-counter;
+  content: "0" counter(why-join-us-counter) "";
+  position: absolute;
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  position: absolute;
-  bottom: -55px;
-  background-color: #fcb72b;
-  color: var(--blue-gray-2);
-  font-family: "Space Mono";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -1.07px;
   left: 50%;
   transform: translateX(-50%);
+  bottom: calc(clamp(48px, 4.95vw, 55px) * -1);
+  background-color: var(--color-yellow);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.join-card-content h3 {
-  color: var(--blue-gray-2);
+  color: var(--color-dark-navy);
+  font-family: var(--font-space-mono);
   font-size: 24px;
+  font-weight: 700;
   letter-spacing: -1.07px;
 }
-.join-card-content p {
-  color: var(--blue-gray);
+.why-join-us .wrapper .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.why-join-us .wrapper .content {
+  margin-top: clamp(64px, 7.83vw, 87px);
+}
+.why-join-us .wrapper .content h3 {
+  margin-bottom: 27px;
+  color: var(--color-dark-navy);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+}
+.why-join-us .wrapper .content p {
+  color: var(--color-dim-grey);
   font-size: 15px;
   line-height: 25px;
-  margin-top: 27px;
 }
-.apply {
-  margin: 120px auto;
+
+/* Job Listings */
+.job-listings{
+  margin-bottom: 120px;
+}
+.job-listings ul {
   flex-direction: column;
   gap: 24px;
 }
-.apply-row-container {
-  padding: 32px 40px;
-  background-color: #f2f5f9;
-  gap: 26px;
+.job-listings ul li {
+  padding: 32px clamp(32px, 3.6vw, 40px);
+  background-color: var(--color-snow);
+  gap: 16px;
 }
-.apply-content {
-  color: var(--blue-gray-2);
-}
-.apply-content h3 {
+.job-listings ul div h3 {
+  color: var(--color-dark-navy);
   font-size: clamp(18px, 2.16vw, 24px);
-  letter-spacing: -1.07px;
-  margin-bottom: 8px;
+  letter-spacing: calc(clamp(0.8px, 0.09vw, 1.07px) * -1);
+  margin-bottom: clamp(4px, 0.72vw, 8px);
 }
-.apply-content h4 {
+.job-listings ul div h4 {
+  color: var(--color-dark-navy);
   font-size: 15px;
+  font-weight: 400;
 }
-.apply-row-container a {
-  width: 180px;
+.job-listings .button-primary {
+  padding-inline: 67px;
 }
-@media (max-width: 902px) {
-  .care {
+
+/* Media Queries */
+@media (width < 1142px) {
+  .why-join-us .wrapper {
+    flex-direction: column;
+  }
+  .why-join-us .wrapper article {
+    max-width: 100%;
+  }
+}
+@media (width < 890px) {
+  .join-mission {
     justify-content: center;
   }
-  .care::after {
-    right: -379px;
-    top: 0;
-    transform: translateY(0);
-  }
-  .care::before {
-    top: 204px;
-  }
-  .care-content {
+  .join-mission .content {
     flex-grow: 1;
     text-align: center;
   }
 }
-@media (max-width: 768px) {
-  .join-cards-container {
-    flex-direction: column;
-  }
-  .join-card {
-    width: 100%;
-  }
-}
-@media (max-width: 584px) {
+@media (width < 576px) {
   .hero::after {
     display: none;
   }
-  .hero-container {
+  .hero .container {
     justify-content: center;
   }
-  .care::after {
-    display: none;
-  }
-  .care::before {
-    right: -423px;
-    top: 164px;
-  }
-  .apply-row-container {
+  .job-listings ul li{
     flex-direction: column;
+  }
+  .job-listings :where(h3,h4){
     text-align: center;
   }
-  .apply-row-container a {
+  .job-listings ul .button-primary{
     width: 100%;
   }
 }
