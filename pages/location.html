@@ -3,14 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Find Scoot locations near you. Our scooters are available in convenient spots across major cities. Start your ride today!"
-    />
-    <meta
-      name="keywords"
-      content="Scoot locations, find scooters near me, scooter sharing cities, urban mobility locations, Scoot rental spots"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,15 +18,15 @@
   <body>
     <header class="header">
       <div class="container flex items-center justify-between">
-        <button class="menu-toggle-button">
+        <button class="menu-toggle-btn">
           <img
-            class="menu-toggle-icon"
-            src="../images/icon-menu-open.png"
+            class="mobile-nav-toggle"
+            src="../images/hamburger-menu-open.png"
             alt="Menu Icon"
           />
         </button>
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo">
+        <div class="header-nav flex items-center">
+          <a href="../index.html" class="logo">
             <svg
               width="107.817139"
               height="28.560059"
@@ -55,77 +47,78 @@
               />
             </svg>
           </a>
-          <nav id="main-navigation" data-status="closed">
-            <ul class="font-primary flex">
+          <nav id="nav-menu" data-status="closed">
+            <ul class="font-mono flex">
               <li>
-                <a href="./about.html" class="font-bold transition">About</a>
-              </li>
-
-              <li>
-                <a
-                  href="./location.html"
-                  class="font-bold transition current-page"
-                  >Location</a
+                <a href="./about.html" class="font-bold smooth-transition"
+                  >About</a
                 >
               </li>
               <li>
-                <a href="./careers.html" class="font-bold transition"
+                <a href="./careers.html" class="font-bold smooth-transition"
                   >Careers</a
                 >
               </li>
+              <li>
+                <a
+                  href="./location.html"
+                  class="font-bold smooth-transition active-nav-link"
+                  >Location</a
+                >
+              </li>
             </ul>
-            <a href="#" class="button-primary">Get Scooting</a>
+            <a href="#" class="btn-primary">Get Scooting</a>
           </nav>
         </div>
-        <a href="#" class="button-primary">Get Scooting</a>
+        <a href="#" class="btn-primary">Get Scooting</a>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container flex items-center">
-          <h1 class="font-primary">Location</h1>
+          <h1 class="font-mono">Location</h1>
         </div>
       </section>
-      <section class="locations-map-section container">
-        <img
-          class="locations-map"
-          src="../images/location/locations-map-image.png"
-          alt="World map highlighting city locations"
-          loading="lazy"
-        />
-        <img
-          class="locations-map-mobile"
-          src="../images/location/locations-map-image-mobile.png"
-          alt="World map highlighting city locations"
-          loading="lazy"
-        />
-        <ul class="city-list">
-          <li><h3 class="font-primary">New York</h3></li>
-          <li><h3 class="font-primary">London</h3></li>
-          <li><h3 class="font-primary">Jakarta</h3></li>
-          <li><h3 class="font-primary">Yokohama</h3></li>
+      <section class="global-locations container">
+        <picture>
+          <source
+            srcset="../images/location/world-map-mobile.png"
+            media="(max-width: 696px)"
+          />
+          <img
+            class="world-map"
+            src="../images/location/world-map.png"
+            alt="World map highlighting city locations"
+            loading="lazy"
+          />
+        </picture>
+        <ul class="cities">
+          <li><h3 class="font-mono">New York</h3></li>
+          <li><h3 class="font-mono">London</h3></li>
+          <li><h3 class="font-mono">Jakarta</h3></li>
+          <li><h3 class="font-mono">Yokohama</h3></li>
         </ul>
       </section>
       <section
-        class="city-request container flex items-center justify-between flex-wrap"
+        class="request-city container flex items-center justify-between flex-wrap"
       >
-        <h2 class="font-primary">Your city not listed?</h2>
-        <p class="font-secondary">
+        <h2 class="font-mono">Your city not listed?</h2>
+        <p class="font-primary">
           If you’d like to see Scoot in your hometown, be sure to let us know.
           We track requests and plan launches based on demand. Feel free to
           message us by clicking the link or messaging us on social.
         </p>
         <a
           href="#"
-          class="button-primary"
+          class="btn-primary"
           aria-label="Send us a message to request Scoot in your city"
           >Message Us</a
         >
       </section>
-      <section class="sign-up">
+      <section class="signup">
         <div class="container flex items-center justify-between flex-wrap">
-          <h2 class="font-primary">Sign up and Scoot off today</h2>
-          <div class="app-links flex">
+          <h2 class="font-mono">Sign up and Scoot off today</h2>
+          <div class="signup-links flex">
             <a href="#" aria-label="Download from the App Store">
               <svg
                 width="159.000000"
@@ -282,8 +275,8 @@
     </main>
     <footer class="footer">
       <div class="container flex items-center justify-between">
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo"
+        <div class="footer-nav flex items-center">
+          <a href="../index.html" class="logo"
             ><svg
               viewBox="0 0 107.817 28.56"
               fill="none"
@@ -303,32 +296,30 @@
             </svg>
           </a>
           <nav>
-            <ul class="flex">
+            <ul class="flex font-mono">
               <li>
-                <a href="./about.html" class="font-primary transition font-bold"
+                <a href="./about.html" class="smooth-transition font-bold"
                   >About</a
+                >
+              </li>
+              <li>
+                <a href="./careers.html" class="smooth-transition font-bold"
+                  >Careers</a
                 >
               </li>
               <li>
                 <a
                   href="./location.html"
-                  class="current-page font-primary transition font-bold"
+                  class="smooth-transition font-bold active-nav-link"
                   >Location</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./careers.html"
-                  class="font-primary transition font-bold"
-                  >Careers</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="social-media-links flex items-center">
+        <ul class="social-links flex items-center">
           <li>
-            <a href="#" class="transition" aria-label="Go To Facebook Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"
@@ -350,7 +341,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Twitter Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="19.503998"
@@ -372,7 +363,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Instagram Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"

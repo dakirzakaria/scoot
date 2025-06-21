@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Join the Scoot team and help shape the future of urban mobility. Explore exciting career opportunities and grow with us as we expand globally." />
-    <meta name="keywords" content="Scoot careers, urban mobility jobs, transportation careers, work at Scoot, scooter sharing careers" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,15 +18,15 @@
   <body>
     <header class="header">
       <div class="container flex items-center justify-between">
-        <button class="menu-toggle-button">
+        <button class="menu-toggle-btn">
           <img
-            class="menu-toggle-icon"
-            src="../images/icon-menu-open.png"
+            class="mobile-nav-toggle"
+            src="../images/hamburger-menu-open.png"
             alt="Menu Icon"
           />
         </button>
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo">
+        <div class="header-nav flex items-center">
+          <a href="../index.html" class="logo">
             <svg
               width="107.817139"
               height="28.560059"
@@ -49,69 +47,71 @@
               />
             </svg>
           </a>
-          <nav id="main-navigation" data-status="closed">
-            <ul class="font-primary flex">
+          <nav id="nav-menu" data-status="closed">
+            <ul class="font-mono flex">
               <li>
-                <a href="./about.html" class="font-bold transition">About</a>
-              </li>
-              <li>
-                <a href="./location.html" class="font-bold transition"
-                  >Location</a
+                <a href="./about.html" class="font-bold smooth-transition"
+                  >About</a
                 >
               </li>
               <li>
                 <a
                   href="./careers.html"
-                  class="font-bold transition current-page"
+                  class="font-bold smooth-transition active-nav-link"
                   >Careers</a
                 >
               </li>
+              <li>
+                <a href="./location.html" class="font-bold smooth-transition"
+                  >Location</a
+                >
+              </li>
             </ul>
-            <a href="#" class="button-primary">Get Scooting</a>
+            <a href="#" class="btn-primary">Get Scooting</a>
           </nav>
         </div>
-        <a href="#" class="button-primary">Get Scooting</a>
+        <a href="#" class="btn-primary">Get Scooting</a>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container flex items-center">
-          <h1 class="font-primary">Careers</h1>
+          <h1 class="font-mono">Careers</h1>
         </div>
       </section>
       <section
-        class="join-mission container flex items-center justify-between flex-wrap-reverse"
+        class="career-mission container flex items-center justify-between flex-wrap-reverse"
       >
         <article class="content">
-          <h2 class="font-primary">Care to join our mission?</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Care to join our mission?</h2>
+          <p class="font-primary">
             We’re always looking for ambitious individuals to help us on our
             journey. If you’re passionate about our mission to provide clean,
             accessible transport to improve urban living we want to hear from
             you!
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
         <img
-          src="../images/careers/join-mission-image.png"
-          alt="People collaborating on a clean urban transportation mission"
+          src="../images/careers/team-meeting.png"
+          alt="Man presenting to a team during a meeting in a modern office"
           loading="lazy"
         />
       </section>
-      <section class="why-join-us container">
-        <h2 class="font-primary text-center">Why join us?</h2>
+      <section class="career-benefits container">
+        <h2 class="font-mono text-center">Why join us?</h2>
         <div class="wrapper flex items-center justify-between flex-wrap">
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/careers/technology-image.png"
-                alt="Technology illustration"
+                alt="Close-up of a person holding a smartphone"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our tech</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our tech</h3>
+              <p class="font-primary">
                 We’re using cutting edge technology to drive accessible urban
                 transportation forward. Our fully electric scooters are a joy to
                 ride!
@@ -119,32 +119,32 @@
             </div>
           </article>
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/careers/integrity-image.png"
-                alt="Integrity concept illustration"
+                alt="Man riding an electric scooter on a city street"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our integrity</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our integrity</h3>
+              <p class="font-primary">
                 We are fully committed to deliver a great yet safe, sustainable
                 micro-mobility experience in every city we serve.
               </p>
             </div>
           </article>
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/careers/community-image.png"
-                alt="Community support illustration"
+                alt="Group of friends walking together in the city"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our community</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our community</h3>
+              <p class="font-primary">
                 We support every community we serve. All workers are paid a
                 living wage based on their location and are Scoot employees.
               </p>
@@ -152,86 +152,86 @@
           </article>
         </div>
       </section>
-      <section class="job-listings container">
+      <section class="career-opportunities container">
         <ul class="flex">
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">General Manager</h3>
-              <h4 class="font-secondary">Jakarta, Indonesia</h4>
+              <h3 class="font-mono">General Manager</h3>
+              <h4 class="font-primary">Jakarta, Indonesia</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for General Manager role in Jakarta, Indonesia"
               >Apply</a
             >
           </li>
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">UI/UX Designer</h3>
-              <h4 class="font-secondary">Yokohama, Japan</h4>
+              <h3 class="font-mono">UI/UX Designer</h3>
+              <h4 class="font-primary">Yokohama, Japan</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for UI/UX Designer role in Yokohama, Japan"
               >Apply</a
             >
           </li>
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">Blog Content Copywriter</h3>
-              <h4 class="font-secondary">New York, United States</h4>
+              <h3 class="font-mono">Blog Content Copywriter</h3>
+              <h4 class="font-primary">New York, United States</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for Blog Content Copywriter role in New York, United States"
               >Apply</a
             >
           </li>
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">Graphic Designer</h3>
-              <h4 class="font-secondary">New York, United States</h4>
+              <h3 class="font-mono">Graphic Designer</h3>
+              <h4 class="font-primary">New York, United States</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for Graphic Designer role in New York, United States"
               >Apply</a
             >
           </li>
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">Fleet Supervisor</h3>
-              <h4 class="font-secondary">Jakarta, Indonesia</h4>
+              <h3 class="font-mono">Fleet Supervisor</h3>
+              <h4 class="font-primary">Jakarta, Indonesia</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for Fleet Supervisor role in Jakarta, Indonesia"
               >Apply</a
             >
           </li>
           <li class="flex items-center justify-between flex-wrap">
             <div>
-              <h3 class="font-primary">UX Analyst</h3>
-              <h4 class="font-secondary">London, United Kingdom</h4>
+              <h3 class="font-mono">UX Analyst</h3>
+              <h4 class="font-primary">London, United Kingdom</h4>
             </div>
             <a
               href="#"
-              class="button-primary"
+              class="btn-primary"
               aria-label="Apply for UX Analyst role in London, United Kingdom"
               >Apply</a
             >
           </li>
         </ul>
       </section>
-      <section class="sign-up">
+      <section class="signup">
         <div class="container flex items-center justify-between flex-wrap">
-          <h2 class="font-primary">Sign up and Scoot off today</h2>
-          <div class="app-links flex">
+          <h2 class="font-mono">Sign up and Scoot off today</h2>
+          <div class="signup-links flex">
             <a href="#" aria-label="Download from the App Store">
               <svg
                 width="159.000000"
@@ -388,8 +388,8 @@
     </main>
     <footer class="footer">
       <div class="container flex items-center justify-between">
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo"
+        <div class="footer-nav flex items-center">
+          <a href="../index.html" class="logo"
             ><svg
               viewBox="0 0 107.817 28.56"
               fill="none"
@@ -409,32 +409,30 @@
             </svg>
           </a>
           <nav>
-            <ul class="flex">
+            <ul class="flex font-mono">
               <li>
-                <a href="./about.html" class="font-primary transition font-bold"
+                <a href="./about.html" class="smooth-transition font-bold"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="./location.html"
-                  class="font-primary transition font-bold"
-                  >Location</a
+                  href="./careers.html"
+                  class="smooth-transition font-bold active-nav-link"
+                  >Careers</a
                 >
               </li>
               <li>
-                <a
-                  href="./careers.html"
-                  class="current-page font-primary transition font-bold"
-                  >Careers</a
+                <a href="./location.html" class="smooth-transition font-bold"
+                  >Location</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="social-media-links flex items-center">
+        <ul class="social-links flex items-center">
           <li>
-            <a href="#" class="transition" aria-label="Go To Facebook Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"
@@ -456,7 +454,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Twitter Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="19.503998"
@@ -478,7 +476,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Instagram Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"

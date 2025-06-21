@@ -3,14 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Scoot makes urban mobility simple and convenient. Locate, pick, and ride scooters with ease using our app. Enjoy hassle-free payments, smart telemetry, and city expansions."
-    />
-    <meta
-      name="keywords"
-      content="scooter sharing, urban mobility, Scoot app, scooter rental, eco-friendly transportation, zero-hassle payments, smart telemetry"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,15 +18,15 @@
   <body>
     <header class="header">
       <div class="container flex items-center justify-between">
-        <button class="menu-toggle-button">
+        <button class="menu-toggle-btn">
           <img
-            class="menu-toggle-icon"
-            src="./images/icon-menu-open.png"
+            class="mobile-nav-toggle"
+            src="./images/hamburger-menu-open.png"
             alt="Menu Icon"
           />
         </button>
-        <div class="logo-nav flex items-center">
-          <a href="./index.html" class="logo" aria-label="Scoot Logo">
+        <div class="header-nav flex items-center">
+          <a href="./index.html" class="logo">
             <svg
               width="107.817139"
               height="28.560059"
@@ -55,47 +47,51 @@
               />
             </svg>
           </a>
-          <nav id="main-navigation" data-status="closed">
-            <ul class="font-primary flex">
+          <nav id="nav-menu" data-status="closed">
+            <ul class="font-mono flex">
               <li>
-                <a href="./pages/about.html" class="font-bold transition"
+                <a href="./pages/about.html" class="font-bold smooth-transition"
                   >About</a
                 >
               </li>
               <li>
-                <a href="./pages/careers.html" class="font-bold transition"
+                <a
+                  href="./pages/careers.html"
+                  class="font-bold smooth-transition"
                   >Careers</a
                 >
               </li>
               <li>
-                <a href="./pages/location.html" class="font-bold transition"
+                <a
+                  href="./pages/location.html"
+                  class="font-bold smooth-transition"
                   >Location</a
                 >
               </li>
             </ul>
-            <a href="#" class="button-primary">Get Scooting</a>
+            <a href="#" class="btn-primary">Get Scooting</a>
           </nav>
         </div>
-        <a href="#" class="button-primary">Get Scooting</a>
+        <a href="#" class="btn-primary">Get Scooting</a>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container flex items-center">
           <article>
-            <h1 class="font-primary">Scooter sharing made simple</h1>
-            <p class="font-secondary">
+            <h1 class="font-mono">Scooter sharing made simple</h1>
+            <p class="font-primary">
               Scoot takes the hassle out of urban mobility. Our bikes are placed
               in convenient locations in each of our cities. Use our app to
               locate the nearest bike, unlock it with a tap, and you’re away!
             </p>
-            <a href="#" class="button-primary">Get Scooting</a>
+            <a href="#" class="btn-primary">Get Scooting</a>
           </article>
         </div>
       </section>
-      <section class="scooter-steps container">
+      <section class="scooter-process container">
         <article>
-          <div class="step-image">
+          <div class="step-icon-wrapper">
             <svg
               width="39"
               height="48"
@@ -111,9 +107,9 @@
               />
             </svg>
           </div>
-          <div class="step-content">
-            <h3 class="font-primary">Locate with app</h3>
-            <p class="font-secondary">
+          <div class="step-description">
+            <h3 class="font-mono">Locate with app</h3>
+            <p class="font-primary">
               Use the app to find the nearest scooter to you. We are
               continuously placing scooters in the areas with most demand, so
               one should never be too far away.
@@ -121,7 +117,7 @@
           </div>
         </article>
         <article>
-          <div class="step-image">
+          <div class="step-icon-wrapper">
             <svg
               width="43"
               height="32"
@@ -145,9 +141,9 @@
               />
             </svg>
           </div>
-          <div class="step-content">
-            <h3 class="font-primary">Pick your scooter</h3>
-            <p class="font-secondary">
+          <div class="step-description">
+            <h3 class="font-mono">Pick your scooter</h3>
+            <p class="font-primary">
               We show the most important info for the scooters closest to you.
               So you know how much charge they have left and can see roughly how
               much it will cost.
@@ -155,8 +151,8 @@
           </div>
         </article>
         <article>
-          <div class="step-image">
-            <span class="gray-line"></span>
+          <div class="step-icon-wrapper">
+            <span class="connector-line"></span>
             <svg
               width="40"
               height="40"
@@ -172,9 +168,9 @@
               />
             </svg>
           </div>
-          <div class="step-content">
-            <h3 class="font-primary">Enjoy the ride</h3>
-            <p class="font-secondary">
+          <div class="step-description">
+            <h3 class="font-mono">Enjoy the ride</h3>
+            <p class="font-primary">
               Scan the QR code and the bike will unlock. Retract the cable lock,
               put on a helmet, and you’re off! Always lock bikes away from
               walkways and accessibility ramps.
@@ -186,63 +182,63 @@
         class="telemetry container flex items-center justify-between flex-wrap-reverse"
       >
         <article class="content">
-          <h2 class="font-primary">Easy to use riding telemetry</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Easy to use riding telemetry</h2>
+          <p class="font-primary">
             The Scoot app is available with riding telemetry. This means it can
             show you your average speed, how long you've been using the scooter,
             your traveling distance, and many more things all in an easy to use
             app.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
         <img
-          src="./images/home/telemetry-image.png"
-          alt="Scoot app telemetry features"
+          src="./images/home/telemetry-illustration.png"
+          alt=" Person smiling while looking at a smartphone, demonstrating the scooter telemetry app."
           loading="lazy"
         />
       </section>
       <section
-        class="city-expansion container flex items-center justify-between flex-wrap"
+        class="expansion container flex items-center justify-between flex-wrap"
       >
         <img
-          src="./images/home/city-expansion-image.png"
-          alt="City expansion image"
+          src="./images/home/city-expansion-illustration.png"
+          alt="Urban cityscape with tall buildings and a street lined with trees, representing city expansion."
           loading="lazy"
         />
         <article class="content">
-          <h2 class="font-primary">Coming to a city near you</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Coming to a city near you</h2>
+          <p class="font-primary">
             Scoot is available in 4 major cities so far. We’re expanding
             rapidly, so be sure to let us know if you want to see us in your
             hometown. We’re aiming to let our scooters loose on 23 cities over
             the coming year.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
       </section>
       <section
-        class="payment-info container flex items-center justify-between flex-wrap-reverse"
+        class="payment container flex items-center justify-between flex-wrap-reverse"
       >
         <article class="content">
-          <h2 class="font-primary">Zero hassle payments</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Zero hassle payments</h2>
+          <p class="font-primary">
             Our payment is as easy as one two three. We accept most credit cards
             and debit cards. You can also link your PayPal account inside the
             app. Need to pay later? No worries! You can defer payment for up to
             a month.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
         <img
-          src="./images/home/payment-image.png"
-          alt="Illustration of an easy payment process"
+          src="./images/home/payment-illustration.png"
+          alt="Close-up of hands holding an open wallet with cash and credit cards, symbolizing easy payment"
           loading="lazy"
         />
       </section>
-      <section class="sign-up">
+      <section class="signup">
         <div class="container flex items-center justify-between flex-wrap">
-          <h2 class="font-primary">Sign up and Scoot off today</h2>
-          <div class="app-links flex">
+          <h2 class="font-mono">Sign up and Scoot off today</h2>
+          <div class="signup-links flex">
             <a href="#" aria-label="Download from the App Store">
               <svg
                 width="159.000000"
@@ -399,8 +395,8 @@
     </main>
     <footer class="footer">
       <div class="container flex items-center justify-between">
-        <div class="logo-nav flex items-center">
-          <a href="./index.html" class="logo" aria-label="Scoot Logo"
+        <div class="footer-nav flex items-center">
+          <a href="./index.html" class="logo"
             ><svg
               viewBox="0 0 107.817 28.56"
               fill="none"
@@ -424,30 +420,30 @@
               <li>
                 <a
                   href="./pages/about.html"
-                  class="font-primary transition font-bold"
+                  class="font-mono smooth-transition font-bold"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="./pages/location.html"
-                  class="font-primary transition font-bold"
-                  >Location</a
+                  href="./pages/careers.html"
+                  class="font-mono smooth-transition font-bold"
+                  >Careers</a
                 >
               </li>
               <li>
                 <a
-                  href="./pages/careers.html"
-                  class="font-primary transition font-bold"
-                  >Careers</a
+                  href="./pages/location.html"
+                  class="font-mono smooth-transition font-bold"
+                  >Location</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="social-media-links flex items-center">
+        <ul class="social-links flex items-center">
           <li>
-            <a href="#" class="transition" aria-label="Go To Facebook Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"
@@ -469,7 +465,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Twitter Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="19.503998"
@@ -491,7 +487,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Instagram Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"

@@ -3,14 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Learn about Scoot and our mission to revolutionize urban mobility. Discover how we make transportation accessible, sustainable, and easy for everyone."
-    />
-    <meta
-      name="keywords"
-      content="about Scoot, urban mobility solutions, sustainable transportation, scooter sharing mission, Scoot company"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,15 +18,15 @@
   <body>
     <header class="header">
       <div class="container flex items-center justify-between">
-        <button class="menu-toggle-button">
+        <button class="menu-toggle-btn">
           <img
-            class="menu-toggle-icon"
-            src="../images/icon-menu-open.png"
+            class="mobile-nav-toggle"
+            src="../images/hamburger-menu-open.png"
             alt="Menu Icon"
           />
         </button>
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo">
+        <div class="header-nav flex items-center">
+          <a href="../index.html" class="logo">
             <svg
               width="107.817139"
               height="28.560059"
@@ -55,86 +47,88 @@
               />
             </svg>
           </a>
-          <nav id="main-navigation" data-status="closed">
-            <ul class="font-primary flex">
+          <nav id="nav-menu" data-status="closed">
+            <ul class="font-mono flex">
               <li>
-                <a href="./about.html" class="font-bold transition current-page"
+                <a
+                  href="./about.html"
+                  class="font-bold smooth-transition active-nav-link"
                   >About</a
                 >
               </li>
               <li>
-                <a href="./location.html" class="font-bold transition"
-                  >Location</a
-                >
-              </li>
-              <li>
-                <a href="./careers.html" class="font-bold transition"
+                <a href="./careers.html" class="font-bold smooth-transition"
                   >Careers</a
                 >
               </li>
+              <li>
+                <a href="./location.html" class="font-bold smooth-transition"
+                  >Location</a
+                >
+              </li>
             </ul>
-            <a href="#" class="button-primary">Get Scooting</a>
+            <a href="#" class="btn-primary">Get Scooting</a>
           </nav>
         </div>
-        <a href="#" class="button-primary">Get Scooting</a>
+        <a href="#" class="btn-primary">Get Scooting</a>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container flex items-center">
-          <h1 class="font-primary">About</h1>
+          <h1 class="font-mono">About</h1>
         </div>
       </section>
       <section
-        class="mobility container flex items-center justify-between flex-wrap-reverse"
+        class="digital-mobility container flex items-center justify-between flex-wrap-reverse"
       >
         <article class="content">
-          <h2 class="font-primary">Mobility for the digital era</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Mobility for the digital era</h2>
+          <p class="font-primary">
             Getting around should be simple (and even fun!) for everyone. We
             embrace technology to provide low cost, smart access to scooters at
             your fingertips.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
         <img
           src="../images/about/mobility-image.png"
-          alt="Digital era mobility illustration"
+          alt="Person using a smartphone app for mobility services"
           loading="lazy"
         />
       </section>
       <section
-        class="urban-living container flex items-center justify-between flex-wrap"
+        class="better-living container flex items-center justify-between flex-wrap"
       >
         <img
-          src="../images/about/urban-living-image.png"
-          alt="Urban living illustration"
+          src="../images/about/better-living-image.png"
+          alt="Electric tram moving through a modern urban city"
           loading="lazy"
         />
         <article class="content">
-          <h2 class="font-primary">Better urban living</h2>
-          <p class="font-secondary">
+          <h2 class="font-mono">Better urban living</h2>
+          <p class="font-primary">
             We’re helping connect cities and bring people closer together. Our
             scooters are also fully-electric and we offset the minimal carbon
             footprint for each ride.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
+          <a href="#" class="btn-primary">Learn More</a>
         </article>
       </section>
-      <section class="values container">
-        <h2 class="font-primary text-center">Our values</h2>
+      <section class="company-values container">
+        <h2 class="font-mono text-center">Our values</h2>
         <div class="wrapper flex items-center justify-between flex-wrap">
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/about/technology-image.png"
-                alt="Technology illustration"
+                alt="Close-up of a person holding a smartphone"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our tech</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our tech</h3>
+              <p class="font-primary">
                 We’re using cutting edge technology to drive accessible urban
                 transportation forward. Our fully electric scooters are a joy to
                 ride!
@@ -142,32 +136,32 @@
             </div>
           </article>
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/about/integrity-image.png"
-                alt="Integrity concept illustration"
+                alt="Man riding an electric scooter on a city street"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our integrity</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our integrity</h3>
+              <p class="font-primary">
                 We are fully committed to deliver a great yet safe, sustainable
                 micro-mobility experience in every city we serve.
               </p>
             </div>
           </article>
           <article>
-            <div class="image">
+            <div class="image-container">
               <img
                 src="../images/about/community-image.png"
-                alt="Community support illustration"
+                alt="Group of friends walking together in the city"
                 loading="lazy"
               />
             </div>
             <div class="content text-center">
-              <h3 class="font-primary">Our community</h3>
-              <p class="font-secondary">
+              <h3 class="font-mono">Our community</h3>
+              <p class="font-primary">
                 We support every community we serve. All workers are paid a
                 living wage based on their location and are Scoot employees.
               </p>
@@ -175,14 +169,14 @@
           </article>
         </div>
       </section>
-      <section class="faq container">
-        <h2 class="text-center font-primary">FAQs</h2>
-        <div class="faq-category flex justify-between flex-wrap">
-          <h3 class="font-primary">How it works</h3>
-          <div class="faq-items flex">
-            <details class="transition" open>
+      <section class="questions container">
+        <h2 class="text-center font-mono">FAQs</h2>
+        <div class="question-category flex justify-between flex-wrap">
+          <h3 class="font-mono">How it works</h3>
+          <div class="question-items flex">
+            <details class="smooth-transition" open>
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">How do I download the app?</h4>
+                <h4 class="font-mono">How do I download the app?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -193,16 +187,16 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 To download the Scoot app, you can search “Scoot” in both the
                 App and Google Play stores. An even simpler way to do it would
                 be to click the relevant link at the bottom of this page and
                 you’ll be re-directed to the correct page.
               </p>
             </details>
-            <details class="transition">
+            <details class="smooth-transition">
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">Can I find a nearby Scoots?</h4>
+                <h4 class="font-mono">Can I find a nearby Scoots?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -213,16 +207,16 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 To download the Scoot app, you can search “Scoot” in both the
                 App and Google Play stores. An even simpler way to do it would
                 be to click the relevant link at the bottom of this page and
                 you’ll be re-directed to the correct page.
               </p>
             </details>
-            <details class="transition">
+            <details class="smooth-transition">
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">Do I need a license to ride?</h4>
+                <h4 class="font-mono">Do I need a license to ride?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -233,7 +227,7 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 To download the Scoot app, you can search “Scoot” in both the
                 App and Google Play stores. An even simpler way to do it would
                 be to click the relevant link at the bottom of this page and
@@ -242,12 +236,12 @@
             </details>
           </div>
         </div>
-        <div class="faq-category flex justify-between flex-wrap">
-          <h3 class="font-primary">Safe driving</h3>
-          <div class="faq-items flex">
+        <div class="question-category flex justify-between flex-wrap">
+          <h3 class="font-mono">Safe driving</h3>
+          <div class="question-items flex">
             <details class="transition">
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">Should I wear a helmet?</h4>
+                <h4 class="font-mono">Should I wear a helmet?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -258,7 +252,7 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 Yes, please do! All cities have different laws. But we strongly
                 strongly strongly recommend always wearing a helmet regardless
                 of the local laws. We like you and we want you to be as safe as
@@ -267,7 +261,7 @@
             </details>
             <details class="transition">
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">How about the rules & regulations?</h4>
+                <h4 class="font-mono">How about the rules & regulations?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -278,7 +272,7 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 Yes, please do! All cities have different laws. But we strongly
                 strongly strongly recommend always wearing a helmet regardless
                 of the local laws. We like you and we want you to be as safe as
@@ -287,7 +281,7 @@
             </details>
             <details class="transition">
               <summary class="flex items-center justify-between">
-                <h4 class="font-primary">What if I damage my Scoot?</h4>
+                <h4 class="font-mono">What if I damage my Scoot?</h4>
                 <svg
                   width="18"
                   height="13"
@@ -298,7 +292,7 @@
                   <path d="M2 2L10 10L18 2" stroke="#FCB72B" stroke-width="3" />
                 </svg>
               </summary>
-              <p class="font-secondary">
+              <p class="font-primary">
                 Yes, please do! All cities have different laws. But we strongly
                 strongly strongly recommend always wearing a helmet regardless
                 of the local laws. We like you and we want you to be as safe as
@@ -308,10 +302,10 @@
           </div>
         </div>
       </section>
-      <section class="sign-up">
+      <section class="signup">
         <div class="container flex items-center justify-between flex-wrap">
-          <h2 class="font-primary">Sign up and Scoot off today</h2>
-          <div class="app-links flex">
+          <h2 class="font-mono">Sign up and Scoot off today</h2>
+          <div class="signup-links flex">
             <a href="#" aria-label="Download from the App Store">
               <svg
                 width="159.000000"
@@ -468,8 +462,8 @@
     </main>
     <footer class="footer">
       <div class="container flex items-center justify-between">
-        <div class="logo-nav flex items-center">
-          <a href="../index.html" class="logo" aria-label="Scoot Logo"
+        <div class="footer-nav flex items-center">
+          <a href="../index.html" class="logo"
             ><svg
               viewBox="0 0 107.817 28.56"
               fill="none"
@@ -489,34 +483,30 @@
             </svg>
           </a>
           <nav>
-            <ul class="flex">
+            <ul class="flex font-mono">
               <li>
                 <a
                   href="./about.html"
-                  class="current-page font-primary transition font-bold"
+                  class="smooth-transition font-bold active-nav-link"
                   >About</a
                 >
               </li>
               <li>
-                <a
-                  href="./location.html"
-                  class="font-primary transition font-bold"
-                  >Location</a
+                <a href="./careers.html" class="smooth-transition font-bold"
+                  >Careers</a
                 >
               </li>
               <li>
-                <a
-                  href="./careers.html"
-                  class="font-primary transition font-bold"
-                  >Careers</a
+                <a href="./location.html" class="smooth-transition font-bold"
+                  >Location</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="social-media-links flex items-center">
+        <ul class="social-links flex items-center">
           <li>
-            <a href="#" class="transition" aria-label="Go To Facebook Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"
@@ -538,7 +528,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Twitter Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="19.503998"
@@ -560,7 +550,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="transition" aria-label="Go To Instagram Page"
+            <a href="#" class="smooth-transition"
               ><svg
                 width="24.000000"
                 height="24.000000"

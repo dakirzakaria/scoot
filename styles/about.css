@@ -1,15 +1,13 @@
 body {
   counter-reset: values-counter;
 }
-
-/* Hero */
 .hero {
   background: linear-gradient(#2f3b5991, #2f3b5991),
-    url(../images/about/hero-background-image.png) center/cover no-repeat;
+    url(../images/about/hero-bg.png) center/cover no-repeat;
   position: relative;
 }
 .hero::after {
-  content: url(../images/about/circle-hero.png);
+  content: url(../images/about/hero-circles.png);
   position: absolute;
   right: -31px;
   top: 50%;
@@ -19,63 +17,59 @@ body {
   min-height: 200px;
 }
 .hero h1 {
-  color: var(--color-white);
+  color: var(--neutral-white);
   font-size: clamp(40px, 5.04vw, 56px);
   letter-spacing: calc(clamp(1.79px, 0.22vw, 2.5px) * -1);
 }
-
-/* Mobility, Urban Living */
-:where(.mobility, .urban-living) {
+:where(.digital-mobility, .better-living) {
   gap: 56px;
 }
-.mobility {
+.digital-mobility {
   margin-block: clamp(72px, 10.81vw, 120px);
 }
-:where(.mobility, .urban-living) .content {
+:where(.digital-mobility, .better-living) .content {
   flex-basis: 445px;
 }
-:where(.mobility, .urban-living) .content h2 {
-  color: var(--color-dark-navy);
+:where(.digital-mobility, .better-living) .content h2 {
+  color: var(--neutral-navy-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   line-height: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
 }
-:where(.mobility, .urban-living) .content p {
-  color: var(--color-dim-grey);
+:where(.digital-mobility, .better-living) .content p {
+  color: var(--neutral-grey-medium);
   font-size: 15px;
   line-height: 25px;
   margin-block: 24px 40px;
 }
-:where(.mobility, .urban-living) img {
+:where(.digital-mobility, .better-living) img {
   width: clamp(311px, 40.09vw, 445px);
   height: clamp(311px, 40.09vw, 445px);
   border-radius: 50%;
 }
-
-/* Values */
-.values {
+.company-values {
   margin-block: 120px clamp(72px, 10.81vw, 120px);
 }
-.values h2 {
-  color: var(--color-dark-navy);
+.company-values h2 {
+  color: var(--neutral-navy-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
   margin-bottom: clamp(64px, 9.27vw, 103px);
 }
-.values .wrapper {
+.company-values .wrapper {
   gap: 56px 30px;
 }
-.values .wrapper article {
+.company-values .wrapper article {
   max-width: 350px;
 }
-.values .wrapper .image {
+.company-values .wrapper .image-container {
   margin-inline: auto;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   position: relative;
 }
-.values .wrapper .image::after {
+.company-values .wrapper .image-container::after {
   counter-increment: values-counter;
   content: "0" counter(values-counter) "";
   position: absolute;
@@ -85,124 +79,120 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(clamp(48px, 4.95vw, 55px) * -1);
-  background-color: var(--color-yellow);
+  background-color: var(--primary-yellow);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-dark-navy);
-  font-family: var(--font-space-mono);
+  color: var(--neutral-navy-dark);
+  font-family: var(--font-family-mono);
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.07px;
 }
-.values .wrapper .image img {
+.company-values .wrapper .image-container img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
 }
-.values .wrapper .content {
+.company-values .wrapper .content {
   margin-top: clamp(64px, 7.83vw, 87px);
 }
-.values .wrapper .content h3 {
+.company-values .wrapper .content h3 {
   margin-bottom: 27px;
-  color: var(--color-dark-navy);
+  color: var(--neutral-navy-dark);
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -1.07px;
 }
-.values .wrapper .content p {
-  color: var(--color-dim-grey);
+.company-values .wrapper .content p {
+  color: var(--neutral-grey-medium);
   font-size: 15px;
   line-height: 25px;
 }
-
-/* Faq */
-.faq {
+.questions {
   margin-bottom: clamp(120px, 14.41vw, 160px);
 }
-.faq h2 {
-  color: var(--color-dark-navy);
+.questions h2 {
+  color: var(--neutral-grey-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
 }
-.faq-category {
+.questions faq-category {
   gap: 32px;
 }
-.faq .faq-category:nth-child(2) {
+.questions .question-category:nth-child(2) {
   margin-block: clamp(48px, 5.76vw, 64px);
 }
-.faq .faq-category h3 {
-  color: var(--color-dark-navy);
+.questions .question-category h3 {
+  color: var(--neutral-grey-dark);
   font-size: clamp(24px, 3.6vw, 40px);
   letter-spacing: calc(clamp(1.07px, 0.16vw, 1.79px) * -1);
 }
-.faq .faq-items {
+.questions .question-items {
   flex-direction: column;
   gap: 16px;
   max-width: 730px;
   width: 100%;
 }
-.faq .faq-items details {
-  background-color: var(--color-snow);
+.questions .question-items details {
+  background-color: var(--neutral-snow);
   transition-property: background-color;
 }
-.faq .faq-items details:hover {
-  background-color: #fff4df;
+.questions .question-items :where(details:hover, details[open]) {
+  background-color: #fff4df !important;
 }
-.faq .faq-items summary {
+.questions .question-items summary {
   list-style: none;
   padding: 32px clamp(32px, 3.6vw, 40px);
   cursor: url(../images/cursor.png), auto;
 }
-.faq .faq-items summary::-webkit-details-marker {
+.questions .question-items summary::-webkit-details-marker {
   display: none;
 }
-.faq .faq-items summary::marker {
+.questions .question-items summary::marker {
   display: none;
 }
-.faq .faq-items h4 {
-  color: var(--color-dark-navy);
+.fq.questions.question-items h4 {
+  color: var(--neutral-grey-dark);
   font-size: clamp(18px, 2.16vw, 24px);
   letter-spacing: calc(clamp(0.8px, 0.09vw, 1.07px) * -1);
 }
-.faq .faq-items summary svg {
+.fq.questions.question-items summary svg {
   width: 16px;
   height: auto;
 }
-.faq .faq-items details[open] summary svg {
+.questions .question-items details[open] summary svg {
   rotate: 180deg;
 }
-.faq .faq-items p {
-  color: var(--color-dark-navy);
+.questions .question-items p {
+  color: var(--neutral-grey-dark);
   font-size: 15px;
   padding: 0 32px 32px;
 }
-
-/* Media Queries */
 @media (width < 1142px) {
-  .values .wrapper {
+  .company-values .wrapper {
     flex-direction: column;
   }
-  .values .wrapper article {
+  .company-values .wrapper article {
     max-width: 100%;
   }
 }
-@media (width < 890px) {
-  .mobility,
-  .urban-living {
+@media (width < 1054px) {
+  .questions .question-category {
     justify-content: center;
   }
-  :where(.mobility, .urban-living) .content {
-    flex-grow: 1;
-    text-align: center;
+  .questions .question-items {
+    min-width: 100%;
   }
 }
-@media (width < 1054px) {
-  .faq-category {
+@media (width < 890px) {
+  .digital-mobility,
+  .better-living {
     justify-content: center;
   }
-  .faq .faq-items {
-    min-width: 100%;
+  :where(.digital-mobility, .better-living) .content {
+    flex-grow: 1;
+    text-align: center;
   }
 }
 @media (width < 576px) {

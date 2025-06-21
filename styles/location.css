@@ -1,11 +1,10 @@
-/* Hero */
 .hero {
   background: linear-gradient(#2f3b5991, #2f3b5991),
-    url(../images/location/hero-background-image.png) center/cover no-repeat;
+    url(../images/location/hero-bg.png) center/cover no-repeat;
   position: relative;
 }
 .hero::after {
-  content: url(../images/location/circle-hero.png);
+  content: url(../images/location/hero-circles.png);
   position: absolute;
   right: -31px;
   top: 50%;
@@ -15,69 +14,56 @@
   min-height: 200px;
 }
 .hero h1 {
-  color: var(--color-white);
+  color: var(--neutral-white);
   font-size: clamp(40px, 5.04vw, 56px);
   letter-spacing: calc(clamp(1.79px, 0.22vw, 2.5px) * -1);
 }
-
-/* Locations Map */
-.locations-map-section {
+.global-locations {
   margin-top: clamp(72px, 10.81vw, 120px);
 }
-.locations-map-section img {
+.global-locations img {
+  display: block;
   width: 100%;
   height: auto;
 }
-
-.city-list h3 {
+.global-locations .cities h3 {
   background-color: #fcb72b26;
   text-align: center;
   padding: 22px 100px;
-  color: var(--color-dark-navy);
+  color: var(--neutral-navy-dark);
   font-size: 24px;
   letter-spacing: -1.07px;
 }
-.locations-map-mobile,
-.city-list {
+.global-locations .cities {
   display: none;
 }
-
-/* City Request */
-.city-request {
+.request-city {
   gap: 32px;
   margin-block: clamp(72px, 10.81vw, 120px);
 }
-.city-request h2 {
+.request-city h2 {
   max-width: 341px;
-  color: var(--color-dark-navy);
+  color: var(--neutral-navy-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   line-height: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
 }
-.city-request p {
-  color: var(--color-dim-grey);
+.request-city p {
+  color: var(--neutral-grey-medium);
   font-size: 15px;
   max-width: 445px;
 }
-
-/* Media Queries */
 @media (width < 1057px) {
-  .city-request {
+  .request-city {
     flex-direction: column;
   }
-  .city-request :where(h2, p) {
+  .request-city :where(h2, p) {
     text-align: center;
     max-width: 100% !important;
   }
 }
 @media (width < 697px) {
-  .locations-map {
-    display: none;
-  }
-  .locations-map-mobile {
-    display: block;
-  }
-  .city-list {
+  .global-locations .cities {
     margin-top: 40px;
     display: flex;
     flex-direction: column;

@@ -1,15 +1,13 @@
 body {
-  counter-reset: why-join-us-counter;
+  counter-reset: career-benefits-counter;
 }
-
-/* Hero */
 .hero {
   background: linear-gradient(#2f3b5991, #2f3b5991),
-    url(../images/careers/hero-background-image.png) center/cover no-repeat;
+    url(../images/careers/hero-bg.png) center/cover no-repeat;
   position: relative;
 }
 .hero::after {
-  content: url(../images/careers/circle-hero.png);
+  content: url(../images/careers/hero-circles.png);
   position: absolute;
   right: -31px;
   top: 50%;
@@ -19,63 +17,59 @@ body {
   min-height: 200px;
 }
 .hero h1 {
-  color: var(--color-white);
+  color: var(--neutral-white);
   font-size: clamp(40px, 5.04vw, 56px);
   letter-spacing: calc(clamp(1.79px, 0.22vw, 2.5px) * -1);
 }
-
-/* Join Mission */
-.join-mission {
+.career-mission {
   gap: 56px;
   margin-top: clamp(72px, 10.81vw, 120px);
 }
-.join-mission .content {
+.career-mission .content {
   flex-basis: 445px;
 }
-.join-mission .content h2 {
-  color: var(--color-dark-navy);
+.career-mission .content h2 {
+  color: var(--neutral-navy-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   line-height: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
 }
-.join-mission .content p {
-  color: var(--color-dim-grey);
+.career-mission .content p {
+  color: var(--neutral-grey-medium);
   font-size: 15px;
   line-height: 25px;
   margin-block: 24px 40px;
 }
-.join-mission img {
+.career-mission img {
   width: clamp(311px, 40.09vw, 445px);
   height: clamp(311px, 40.09vw, 445px);
   border-radius: 50%;
 }
-
-/* Why Join Us */
-.why-join-us {
+.career-benefits {
   margin-block: 120px;
 }
-.why-join-us h2 {
-  color: var(--color-dark-navy);
+.career-benefits h2 {
+  color: var(--neutral-navy-dark);
   font-size: clamp(32px, 4.32vw, 48px);
   letter-spacing: calc(clamp(1.43px, 0.19vw, 2.14px) * -1);
   margin-bottom: clamp(64px, 9.27vw, 103px);
 }
-.why-join-us .wrapper {
+.career-benefits .wrapper {
   gap: 56px 30px;
 }
-.why-join-us .wrapper article {
+.career-benefits .wrapper article {
   max-width: 350px;
 }
-.why-join-us .wrapper .image {
+.career-benefits .wrapper .image-container {
   margin-inline: auto;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   position: relative;
 }
-.why-join-us .wrapper .image::after {
-  counter-increment: why-join-us-counter;
-  content: "0" counter(why-join-us-counter) "";
+.career-benefits .wrapper .image-container::after {
+  counter-increment: career-benefits-counter;
+  content: "0" counter(career-benefits-counter) "";
   position: absolute;
   width: 96px;
   height: 96px;
@@ -83,79 +77,75 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(clamp(48px, 4.95vw, 55px) * -1);
-  background-color: var(--color-yellow);
+  background-color: var(--primary-yellow);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-dark-navy);
-  font-family: var(--font-space-mono);
+  color: var(--neutral-navy-dark);
+  font-family: var(--font-family-mono);
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.07px;
 }
-.why-join-us .wrapper .image img {
+.career-benefits .wrapper .image-container img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
 }
-.why-join-us .wrapper .content {
+.career-benefits .wrapper .content {
   margin-top: clamp(64px, 7.83vw, 87px);
 }
-.why-join-us .wrapper .content h3 {
+.career-benefits .wrapper .content h3 {
   margin-bottom: 27px;
-  color: var(--color-dark-navy);
+  color: var(--neutral-navy-dark);
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -1.07px;
 }
-.why-join-us .wrapper .content p {
-  color: var(--color-dim-grey);
+.career-benefits .wrapper .content p {
+  color: var(--neutral-grey-medium);
   font-size: 15px;
   line-height: 25px;
 }
-
-/* Job Listings */
-.job-listings{
+.career-opportunities{
   margin-bottom: 120px;
 }
-.job-listings ul {
+.career-opportunities ul {
   flex-direction: column;
   gap: 24px;
 }
-.job-listings ul li {
+.career-opportunities ul li {
   padding: 32px clamp(32px, 3.6vw, 40px);
-  background-color: var(--color-snow);
+  background-color: var(--neutral-snow);
   gap: 16px;
 }
-.job-listings ul div h3 {
-  color: var(--color-dark-navy);
+.career-opportunities ul div h3 {
+  color: var(--neutral-navy-dark);
   font-size: clamp(18px, 2.16vw, 24px);
   letter-spacing: calc(clamp(0.8px, 0.09vw, 1.07px) * -1);
   margin-bottom: clamp(4px, 0.72vw, 8px);
 }
-.job-listings ul div h4 {
-  color: var(--color-dark-navy);
+.career-opportunities ul div h4 {
+  color: var(--neutral-navy-dark);
   font-size: 15px;
   font-weight: 400;
 }
-.job-listings .button-primary {
+.career-opportunities .btn-primary {
   padding-inline: 67px;
 }
-
-/* Media Queries */
 @media (width < 1142px) {
-  .why-join-us .wrapper {
+  .career-benefits .wrapper {
     flex-direction: column;
   }
-  .why-join-us .wrapper article {
+  .career-benefits .wrapper article {
     max-width: 100%;
   }
 }
 @media (width < 890px) {
-  .join-mission {
+  .career-mission {
     justify-content: center;
   }
-  .join-mission .content {
+  .career-mission .content {
     flex-grow: 1;
     text-align: center;
   }
@@ -167,13 +157,13 @@ body {
   .hero .container {
     justify-content: center;
   }
-  .job-listings ul li{
+  .career-opportunities ul li{
     flex-direction: column;
   }
-  .job-listings :where(h3,h4){
+  .career-opportunities :where(h3,h4){
     text-align: center;
   }
-  .job-listings ul .button-primary{
+  .career-opportunities ul .btn-primary{
     width: 100%;
   }
 }
